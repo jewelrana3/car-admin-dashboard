@@ -44,9 +44,9 @@ const Sidebar = () => {
             label: <Link to="/calender">Calender</Link>,
         },
         {
-            key: '/total',
+            key: '/totalEaring',
             icon: <img src={Total} height={24} width={24} />,
-            label: <Link to="/total">Total Earning</Link>,
+            label: <Link to="/totalEaring">Total Earning</Link>,
         },
         {
             key: '/car',

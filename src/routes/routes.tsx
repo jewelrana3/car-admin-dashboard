@@ -1,7 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 import App from '../App';
 import Dashboard from '../pages/dashboard/dashboard/Dashboard';
-import MakeAdmin from '../pages/dashboard/MakeAdmin';
+
 import Login from '../pages/authentication/Login';
 import ErrorPage from '../pages/error/ErrorPage';
 import TermsCondition from '../pages/dashboard/TermsCondition';
@@ -13,6 +13,7 @@ import NewPassword from '../pages/authentication/NewPassword';
 import Profile from '../pages/dashboard/profile/Profile';
 import EventManagements from '../pages/dashboard/EventManagement/EventManagements ';
 import Users from '../pages/dashboard/Users';
+import TotalEaring from '../pages/dashboard/TotalEaring/TotalEaring';
 
 const router = createBrowserRouter([
     {
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
             { path: '', element: <Dashboard /> },
             { path: 'reservations', element: <EventManagements /> },
             { path: 'users', element: <Users /> },
-            { path: 'make-admin', element: <MakeAdmin /> },
+            { path: 'totalEaring', element: <TotalEaring /> },
             { path: 'terms', element: <TermsCondition /> },
             { path: 'faqs', element: <FAQs /> },
             { path: 'notification', element: <Notification /> },

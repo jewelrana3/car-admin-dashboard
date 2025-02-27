@@ -1,6 +1,4 @@
-import { Select } from 'antd';
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from 'recharts';
-const { Option } = Select;
 const data = [
     { name: 'Jan', earnings: 8000 },
     { name: 'Feb', earnings: 12000 },
@@ -19,23 +17,15 @@ const data = [
 const EarningChart = () => {
     return (
         <div
-            style={{
-                display: 'flex',
-                flexDirection: 'column',
-                gap: 10,
-            }}
+
+        // style={{
+        //     display: 'flex',
+        //     flexDirection: 'column',
+        //     gap: 10,
+        // }}
         >
             <div className="px-2 flex items-center justify-between">
-                <h1 className="text-2xl font-medium">User Engagement</h1>
-                <Select defaultValue="2024" className="w-32 h-[40px]">
-                    <Option value="2024">2024</Option>
-                    <Option value="2025">2025</Option>
-                    <Option value="2026">2026</Option>
-                    <Option value="2027">2027</Option>
-                    <Option value="2028">2028</Option>
-                    <Option value="2029">2029</Option>
-                    <Option value="2030">2030</Option>
-                </Select>
+                <h1 className="text-2xl font-bold">Total Revenue</h1>
             </div>
             <ResponsiveContainer width="100%" height={350}>
                 <LineChart data={data} margin={{ top: 20, right: 30, left: 0, bottom: 0 }}>
